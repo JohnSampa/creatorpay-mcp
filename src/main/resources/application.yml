@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: creatorpay-mcp
+  datasource:
+    url: jdbc:h2:mem:creatorpay;DB_CLOSE_DELAY=-1
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: create-drop
+  ai:
+    mcp:
+      server:
+        name: creatorpay-mcp
+        version: 1.0.0
+        type: SYNC
+        protocol: STREAMABLE
+        instructions: >
+          Servidor de dados da CreatorPay, uma plataforma (fictícia) de pagamentos para creators.
+          Os produtores são identificados por um ID numérico: se o usuário citar o produtor pelo nome,
+          chame listarProdutores primeiro para descobrir o ID. Pedidos são identificados por um código
+          no formato CP-10001. Valores estão em reais (BRL) e datas em UTC.
+          Para perguntas sobre recuperação de vendas, use carrinhosAbandonados ou pagamentosVencidos
+          para encontrar os pedidos e depois sugerirRecuperacao para cada pedido.
+          Todos os dados são fictícios e as ferramentas são somente leitura.
+
+creatorpay:
+  webhook:
+    # Em produção, defina a variável de ambiente CREATORPAY_WEBHOOK_SECRET.
+    secret: ${CREATORPAY_WEBHOOK_SECRET:dev-secret-troque-em-producao}
+  seed:
+    enabled: true
