@@ -134,7 +134,7 @@ São 31 testes:
 
 ## Como usei IA neste projeto
 
-Desenvolvi este projeto com o Claude Code como par de programação. Eu defini o domínio, as ferramentas, as regras de recuperação e as decisões de segurança. A IA acelerou a escrita do código e dos testes, e eu revisei, rodei e ajustei cada parte. Uso IA como ferramenta de trabalho, mas o que está aqui eu sei explicar e modificar.
+Este projeto foi feito com o Claude Code como par de programação. Ele é um projeto de estudo, complementar ao servidor MCP real que construí para um ERP no meu estágio. A IA propôs o domínio, as ferramentas e escreveu boa parte do código e dos testes. Eu revisei e aprovei as decisões, rodei os testes e estou estudando cada parte para conseguir explicar e modificar o projeto por conta própria. Uso IA como ferramenta de trabalho e acho importante ser transparente sobre isso.
 
 ## Próximos passos
 
